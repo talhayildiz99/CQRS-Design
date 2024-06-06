@@ -13,7 +13,7 @@ namespace CQRSDesign.CQRSDesignPattern.Handlers.ProductHandlers
             _context = context;
         }
 
-        public void Handler(CreateProductCommand command)
+        public void Handle(CreateProductCommand command)
         {
             _context.Products.Add(new Product
             {
